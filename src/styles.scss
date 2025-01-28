@@ -1,4 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+
+html { 
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e4f38;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e4f38;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background */
+}
