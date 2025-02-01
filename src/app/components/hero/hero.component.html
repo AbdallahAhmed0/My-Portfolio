@@ -1,80 +1,62 @@
-<section class="h-screen bg-hero text-white flex items-center justify-center animate-fade-down">
-      <!-- Left Side -->
-      <div class="w-full md:w-1/2 space-y-6 animate-fade-in ml-6">
-        <h1>Hello, I'm</h1>
-        <h1>
-          <span id="animation-text" class="animated-text"></span>
-        </h1>
-        <p class="text-lg md:text-xl">
-          I am an Angular Developer with a passion for crafting clean, responsive designs that connect brands with their audiences.
-        </p>
-        <!-- Social Icons -->
-        <div class="flex space-x-6">
-          <a 
-            href="https://linkedin.com/in/abdallah-ahmed-3a49721b6" 
-            target="_blank" 
-            class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-120"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a 
-            href="mailto:abdallahahmadadel@gmail.com" 
-            target="_blank" 
-            class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-120"
-          >
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a 
-            href="https://wa.me/0201140858428" 
-            target="_blank" 
-            class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-120"
-          >
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a 
-            href="https://github.com/AbdallahAhmed0" 
-            target="_blank" 
-            class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-120"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+<section class="h-screen bg-hero text-white flex flex-wrap lg:flex-nowrap items-center justify-between p-6 animate-fade-down">
+
+    <!-- Left Side (Text) -->
+    <div class="w-full md:w-1/2 space-y-6 animate-fade-in md:ml-8 text-center md:text-left max-w-md">
+      <h1>Hello, I'm</h1>
+      <h1><span id="animation-text" class="animated-text"></span></h1>
+      <p class="text-lg md:text-xl">
+        I am an Angular Developer with a passion for crafting clean, responsive designs that connect brands with their audiences.
+      </p>
   
-        <div class="flex space-x-6">
-          <button
-            class="bg-transparent hover:bg-[#99ba93] text-[#c3e8bd] font-semibold hover:text-white py-2 px-4 border border-[#c3e8bd] hover:#99ba93 rounded"
-            onclick="location.href='https://drive.usercontent.google.com/download?id=1NxyFeLjGiHgocArofD2ofTOadPlKX76X&export=download&authuser=0&confirm=t&uuid=39410a6b-9d06-417a-b75e-4a292af1a030&at=APvzH3qUPD7SCtHzWBvUyL29eP-1:1735852118780';"
-          >
-            Download CV
-          </button>
-  
-          <button class="relative px-4 py-2 text-[#c3e8bd] bg-transparent border-2 border-[#c3e8bd] rounded-md group font-semibold overflow-hidden hover:text-white hover:bg-[#99ba93] hover:#99ba93 transition-all duration-1000">
-            <span class="absolute inset-0 w-full h-full bg-[#99ba93] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
-            <span class="relative z-10">Hire me</span>
-          </button>
-        </div>
+      <!-- Social Icons -->
+      <div class="flex justify-center md:justify-start space-x-6">
+        <a href="https://linkedin.com/in/abdallah-ahmed-3a49721b6" target="_blank"
+           class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-110">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:abdallahahmadadel@gmail.com" target="_blank"
+           class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-110">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/0201140858428" target="_blank"
+           class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-110">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/AbdallahAhmed0" target="_blank"
+           class="text-white text-4xl hover:text-accent transform transition-transform duration-300 hover:scale-110">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
   
-<!-- Right Side -->
-<div class="w-full md:w-1/2">
-    <div class="flex items-center justify-center h-full">
-      <!-- Outer Circle -->
-      <div class="relative w-[29rem] h-[29rem] rounded-full flex items-center justify-center bg-[#99ba93] shadow-lg">
-        <!-- Middle Circle -->
-        <div class="w-[27.5rem] h-[27.5rem] rounded-full flex items-center justify-center bg-[#c3e8bd] shadow-md">
-          <!-- Inner Circle -->
-          <div class="w-[26rem] h-[26rem] rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm">
-            <!-- Scaling Image -->
-            <img
-              src="img/hero.jpg"
-              alt="hero"
-              class="w-full h-full object-cover animate-scaleInfinite"
-            />
+      <!-- Buttons -->
+      <div class="flex flex-wrap justify-center md:justify-start space-x-4">
+        <button class="bg-transparent hover:bg-[#99ba93] text-[#c3e8bd] font-semibold hover:text-white py-2 px-4 border border-[#c3e8bd] rounded">
+          Download CV
+        </button>
+  
+        <button class="relative px-4 py-2 text-[#c3e8bd] bg-transparent border-2 border-[#c3e8bd] rounded-md group font-semibold overflow-hidden hover:text-white hover:bg-[#99ba93] transition-all duration-1000">
+          <span class="absolute inset-0 w-full h-full bg-[#99ba93] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+          <span class="relative z-10">Hire me</span>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Right Side (Image) -->
+    <div class="w-full md:w-1/2 flex items-center justify-end mr-[7%] mt-10 md:mt-0">
+      <div class="relative max-w-[90%] md:max-w-[80%] lg:max-w-[60%]">
+        <!-- Outer Circle -->
+        <div class="relative w-full aspect-square rounded-full flex items-center justify-center bg-[#99ba93] shadow-lg">
+          <!-- Middle Circle -->
+          <div class="w-[93%] h-[93%] rounded-full flex items-center justify-center bg-[#c3e8bd] shadow-md">
+            <!-- Inner Circle -->
+            <div class="w-[90%] h-[90%] rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm">
+              <!-- Scaling Image -->
+              <img src="img/hero.jpg" alt="hero" class="w-full h-full object-cover animate-scaleInfinite">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   
   </section>
   
