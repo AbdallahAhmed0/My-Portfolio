@@ -1,1 +1,56 @@
-<p>contact works!</p>
+<section class="py-16 bg-[#c3e8bd]" id="contact" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+  
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <!-- Left Side: Image -->
+      <div class="flex justify-center">
+        <img src="img/contact1.jpg" alt="Contact Me" class="w-full h-full max-w-lg max-h-lg rounded-lg shadow-lg">
+      </div>
+  
+      <!-- Right Side: Contact Form -->
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <form   class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input 
+              type="text"
+              name="user_name"
+              ngModel
+              required
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5b7553] focus:border-[#5b7553]"
+              placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input 
+              type="email"
+              name="user_email"
+              ngModel
+              required
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5b7553] focus:border-[#5b7553]"
+              placeholder="your@email.com"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea
+              name="message"
+              ngModel
+              rows="4"
+              required
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5b7553] focus:border-[#5b7553]"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#5b7553] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#99ba93] transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  

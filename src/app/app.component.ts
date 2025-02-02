@@ -5,10 +5,11 @@ import { NgxParticlesModule } from "@tsparticles/angular";
 import { AboutComponent } from "./components/about/about.component";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
+import { ContactComponent } from "./components/contact/contact.component";
 
 @Component({
   selector: 'app-root',
-  imports: [NgxParticlesModule, HeaderComponent, HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent],
+  imports: [NgxParticlesModule, HeaderComponent, HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
