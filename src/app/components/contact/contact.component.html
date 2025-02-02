@@ -9,8 +9,8 @@
   
       <!-- Right Side: Contact Form -->
       <div class="bg-white p-8 rounded-lg shadow-md">
-        <form   class="space-y-6">
-          <div>
+        <form (ngSubmit)="sendEmail()" #contactForm="ngForm" class="space-y-6">
+            <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
             <input 
               type="text"
