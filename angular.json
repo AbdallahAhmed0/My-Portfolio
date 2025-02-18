@@ -120,6 +120,9 @@
               "node_modules/tsparticles/dist/tsparticles.min.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
