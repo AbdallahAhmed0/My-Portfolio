@@ -1,8 +1,10 @@
 <section class="bg-[#5b7553] text-white py-12" id="projects">
-    <div class="container mx-auto px-2">
-      <h2 class="text-4xl font-bold text-center mb-8 pb-12">Projects <span class="text-[#c3e8bd]">💻</span></h2>
+    <div class="container mx-auto px-2" da>
+      <h2 class="text-4xl font-bold text-center mb-8 pb-12" data-aos="fade-down">Projects <span class="text-[#c3e8bd]">💻</span></h2>
       
-      <div class="flex flex-wrap justify-center gap-20">
+      <div class="flex flex-wrap justify-center gap-20"data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div *ngFor="let project of projects" class="bg-[#99ba93] rounded-lg shadow-lg overflow-hidden w-full md:w-1/2 lg:w-2/5 transform transition-all duration-300 hover:scale-105">
           <div class="relative w-full h-52">
             <img [src]="project.image" alt="{{ project.name }}" class="w-full h-full  rounded-lg">

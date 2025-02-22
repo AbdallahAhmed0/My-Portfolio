@@ -1,6 +1,7 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, PLATFORM_ID, AfterViewInit, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-hero',
   imports: [],
@@ -16,7 +17,9 @@ export class HeroComponent implements AfterViewInit,OnInit {
 
 
   ngOnInit(): void {
+   
   }
+
    
   ngAfterViewInit() {
 

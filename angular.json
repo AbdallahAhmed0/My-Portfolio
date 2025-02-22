@@ -114,9 +114,7 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/aos/dist/aos.css"
-
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/tsparticles/dist/tsparticles.min.js"
