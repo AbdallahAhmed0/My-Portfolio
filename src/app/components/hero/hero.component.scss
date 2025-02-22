@@ -13,15 +13,12 @@
     animation: fadeIn 1.5s ease-in-out;
   }
   
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  
+
     .animated-text {
       font-weight: bold;
       border-right: 2px solid #c3e8bd;
       animation: blink 0.7s step-end infinite;
-    }
+
   }
   @keyframes scaleInfinite {
     0%, 100% {
