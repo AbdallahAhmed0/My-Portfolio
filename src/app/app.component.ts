@@ -7,8 +7,8 @@ import { SkillsComponent } from "./components/skills/skills.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import * as AOS from 'aos';
 
-import * as AOS from 'aos'; // Import AOS
 
 @Component({
   selector: 'app-root',
