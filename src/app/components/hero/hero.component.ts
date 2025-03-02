@@ -9,6 +9,7 @@ import { Component, Inject, PLATFORM_ID, AfterViewInit, OnInit } from '@angular/
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent implements AfterViewInit,OnInit {
+window: any;
 
 
 
