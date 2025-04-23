@@ -1,57 +1,56 @@
-<header class="text-white fixed bg-header py-4 shadow-md w-full z-10 animate-fade-down">
-    <div class="container mx-auto flex w-full px-4 lg:px-0"
-    [ngClass]="{ 'justify-center': !isOpen, 'justify-end': isOpen }">
+<header class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-7xl 
+               bg-white/10 backdrop-blur-md rounded-full px-6 py-3 
+               flex items-center justify-center z-50 shadow-md">
+  
+    <!-- Mobile Menu Button -->
+    <button (click)="toggleMenu()" class="lg:hidden px-4 flex w-full justify-end text-white focus:outline-none" aria-label="Toggle menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
 
-      <!-- Mobile Menu Button -->
-      <button (click)="toggleMenu()" class="lg:hidden px-4 flex w-full justify-end text-white focus:outline-none" aria-label="Toggle menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-  
-      <!-- Navigation Menu -->
- 
-      <nav [ngClass]="{ 'hidden': !isOpen, 'block': isOpen }" class="absolute top-16 left-0 w-full bg-header text-center lg:static lg:block lg:w-auto lg:bg-transparent">
-        <div class="flex flex-col space-y-4 py-4 lg:py-0 lg:flex-row lg:space-x-10 lg:space-y-0">
-            <a
-            href="#home"
-            class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
-          >
-            Home
-            <span
-              class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
-            ></span>
-          </a>
+    <!-- Navigation Menu -->
+
+    <nav [ngClass]="{ 'hidden': !isOpen, 'block': isOpen }" class="absolute top-16 right-0 w-1/2  bg-hero text-center lg:static lg:block lg:w-auto lg:bg-transparent">
+      <div class="flex flex-col space-y-4 py-4 lg:py-0 lg:flex-row lg:space-x-10 lg:space-y-0">
           <a
-            href="#about"
-            class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
-          >
-            About
-            <span
-              class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
-            ></span>
-          </a>
-          
-          <a
-            href="#projects"
-            class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
-          >
-            Projects
-            <span
-              class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
-            ></span>
-          </a>
-          <a
-            href="#contact"
-            class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
-          >
-            Contact
-            <span
-              class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
-            ></span>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  
+          href="#home"
+          class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
+        >
+          Home
+          <span
+            class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a
+          href="#about"
+          class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
+        >
+          About
+          <span
+            class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        
+        <a
+          href="#projects"
+          class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
+        >
+          Projects
+          <span
+            class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a
+          href="#contact"
+          class="relative group text-lg font-medium transition-colors duration-300 text-white hover:text-accent"
+        >
+          Contact
+          <span
+            class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </div>
+    </nav>
+
+</header>

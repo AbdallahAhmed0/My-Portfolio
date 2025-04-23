@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,7 +7,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  visibleProjects: any[] = [];
+  showAll = false;
+  
   projects = [
     {
       name: 'App Store',
@@ -31,6 +34,20 @@ export class ProjectsComponent {
       live: 'https://quran-competition.netlify.app'
     },
     {
+      name: 'Voting System',
+      description: 'This project is a personal voting application that allows users to log in, participate in polls with single or multiple choices, and submit their votes with a digital signature. Built with responsiveness and user experience in mind, it ensures a seamless experience across devices.',
+      image: 'img/img Projects/Voting.jpg',
+      link:'https://github.com/AbdallahAhmed0/Voting-System',
+      live: 'https://abdallahahmed0.github.io/Voting-System/login/login.html'
+    },
+    {
+      name: 'Memory Game',
+      description: 'This project is a simple memory game where players match pairs of cards. It features a timer and a scoring system to track performance.',
+      image: 'img/img Projects/memory.jpg',
+      link:'https://abdallahahmed0.github.io/MemoryGame/',
+      live: 'https://github.com/AbdallahAhmed0/MemoryGame'
+    },
+    {
       name: 'My Portfolio',
       description: ' This project is a personal portfolio website that showcases my skills, projects, and contact information.',
       image: 'img/img Projects/portfolio.jpg',
@@ -38,4 +55,19 @@ export class ProjectsComponent {
       live: 'https://drive.google.com/file/d/1IWtkho7F-cd3mPD_lauaRmJ5iKLIUbOH/view'
     }
   ];
+
+  ngOnInit() {
+    this.visibleProjects = this.projects.slice(0, 4); // Show first 4 projects initially
+  }
+  
+  showMoreProjects() {
+    this.visibleProjects = this.projects; // Show all projects
+    this.showAll = true;
+  }
+  
+  showLessProjects() {
+    this.visibleProjects = this.projects.slice(0, 4); // Show first 4 projects
+    this.showAll = false;
+  }
+
 }

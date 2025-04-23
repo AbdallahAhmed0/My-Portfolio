@@ -12,11 +12,9 @@ module.exports = {
         110: '1.1',
       },
       colors: {
-      header:'#75926e',
-      hero:'#5b7553',
-      accent: '#3e4f38',
-      background: '#F3F4F6',
-      text: '#374151',
+      hero:'#212121',
+      accent: '#3FBFFF',
+      text: '#3FBFFF',
     },
   },
     keyframes: {

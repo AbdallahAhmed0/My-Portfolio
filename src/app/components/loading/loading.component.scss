@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #ffffff;
-  }
+    background: #343434;
+}
   
   /* From Uiverse.io by Admin12121 */ 
 .loader {
@@ -33,7 +33,7 @@
     right: 32%;
     bottom: -11px;
   /* change the back groung color on switching from light to dark mood */
-    background: #e8e8e8;
+    background: #2f71ff;
     transform: translateZ(200px) rotate(var(--r));
     -webkit-animation: mask var(--duration) linear forwards infinite;
     animation: mask var(--duration) linear forwards infinite;
