@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdallah Ahmed Portfolio</title>
-</head>
-<body>   
-    <div>
-        <app-header></app-header>
-        <main>
-          <app-hero></app-hero>
-          <app-about></app-about>
-          <app-skills></app-skills>
-          <app-projects></app-projects>
-          <app-contact></app-contact>
-          </main> 
-          <app-footer></app-footer>
-    </div>
-</body>
-</html>
+<app-loading *ngIf="isLoading"></app-loading>
+
+<app-header *ngIf="!isLoading"></app-header>
+
+<main *ngIf="!isLoading">
+  <app-hero></app-hero>
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
+</main>
+
+<app-footer *ngIf="!isLoading"></app-footer>
