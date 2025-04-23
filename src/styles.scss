@@ -6,8 +6,15 @@
 
 html { 
   scroll-behavior: smooth; /* Smooth scrolling */
-}
 
+}
+body {
+  background-color: transparent; /* Makes background see-through */
+  /* OR */
+  background-color: #212121; /* Light gray example - replace with your desired color */;
+  width: 100vw;
+  height: 100vh;
+}
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
 }
