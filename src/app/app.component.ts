@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     // Simulate loading delay
       setTimeout(() => {
         this.isLoading = false;
-      }, 0); // Change duration as needed
+      }, 3000); // Change duration as needed
     
     AOS.init({
       duration: 2000, // Animation duration
