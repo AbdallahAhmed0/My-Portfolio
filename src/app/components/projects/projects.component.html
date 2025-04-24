@@ -1,18 +1,18 @@
-<section class="bg-hero py-16 px-[10%]" id="projects">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-accent [text-shadow:_0_2px_8px_var(--tw-shadow-color)] shadow-accent/50 p-4 sm:p-6 mb-8 sm:mb-12" data-aos="fade-down">
+<section class="bg-hero py-16 px-2 md:px-2 lg:px-[10%]"  id="projects">
+  <div class=" mx-auto px-2 md:px-2 lg:px-6">
+    <h2 class="text-2xl md:text-4xl font-bold text-center text-accent [text-shadow:_0_2px_8px_var(--tw-shadow-color)] shadow-accent/50 p-4 sm:p-6 mb-8 sm:mb-12" data-aos="fade-down">
       My Projects <span class="text-blue-500">💻</span>
     </h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <!-- Show first 4 projects -->
-      <div *ngFor="let project of visibleProjects" class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300" data-aos="fade-right">
+      <div *ngFor="let project of visibleProjects" class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg  overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300" data-aos="fade-right">
         <div class="h-48 bg-gray-100 dark:bg-gray-700">
           <img [src]="project.image" alt="{{ project.name }}" class="w-full h-full object-cover">
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 dark:text-white">{{ project.name }}</h3>
-          <p class="text-gray-600 dark:text-gray-300 mt-2 mb-4">{{ project.description }}</p>
+          <h3 class="text-l md:text-xl font-bold text-gray-800 dark:text-white">{{ project.name }}</h3>
+          <p class="text-gray-600 text-sm md:text-l dark:text-gray-300 mt-2 mb-4">{{ project.description }}</p>
           <div class="flex space-x-4">
             <a [href]="project.live" target="_blank" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
               Live <i class="fas fa-eye ml-2"></i>

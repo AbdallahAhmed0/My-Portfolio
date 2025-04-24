@@ -1,13 +1,16 @@
-<app-loading *ngIf="isLoading"></app-loading>
+<div class="container-fluid">
+    <app-loading *ngIf="isLoading"></app-loading>
 
-<app-header *ngIf="!isLoading"></app-header>
-
-<main *ngIf="!isLoading">
-  <app-hero></app-hero>
-  <app-about></app-about>
-  <app-skills></app-skills>
-  <app-projects></app-projects>
-  <app-contact></app-contact>
-</main>
-
-<app-footer *ngIf="!isLoading"></app-footer>
+    <app-header *ngIf="!isLoading"></app-header>
+    
+    <main *ngIf="!isLoading">
+      <app-hero></app-hero>
+      <app-about></app-about>
+      <app-skills></app-skills>
+      <app-projects></app-projects>
+      <app-contact></app-contact>
+    </main>
+    
+    <app-footer *ngIf="!isLoading"></app-footer>
+    
+</div>

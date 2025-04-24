@@ -6,7 +6,6 @@
 
 html { 
   scroll-behavior: smooth; /* Smooth scrolling */
-
 }
 body {
   background-color: transparent; /* Makes background see-through */
@@ -14,7 +13,18 @@ body {
   background-color: #212121; /* Light gray example - replace with your desired color */;
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+app-root {
+  display: block;
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
 }
